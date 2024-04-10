@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :groups do
-    menber do
+    member do
       post :join
       post :quit
-    end 
+    end
     resources :posts
 
   end
